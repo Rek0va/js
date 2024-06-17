@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Бесконечное слово</title>
+</head> 
+<body>
+    <div id="word"></div>
+
+    <script>
+        const wordElement = document.getElementById('word');
+        const word = 'ИДИ ДЕЛАЙ ХЕЛПЕРСКУЮ НОРМУ НА ТОЛЬЯТТИ!!! ';
+
+        function writeWord() {
+            wordElement.innerHTML += word;
+        }
+
+        setInterval(writeWord, 1000); // каждую секунду добавляем слово
+    </script>
+</body>
+</html>
